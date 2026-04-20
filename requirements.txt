@@ -1,26 +1,32 @@
-# ==============================================
-# FULL PROJECT DEPENDENCIES (ROOT REQUIREMENTS)
-# ==============================================
+# --------------------------
+# BACKEND (Stable for Render)
+# --------------------------
+fastapi==0.110.0
+uvicorn==0.29.0
+python-multipart==0.0.9
 
 # --------------------------
-# BACKEND / ML DEPENDENCIES
+# ML / DATA (Python 3.14 compatible)
 # --------------------------
-fastapi==0.104.1
-uvicorn==0.24.0
-python-multipart==0.0.6
+numpy==2.1.0
+pandas==2.2.2
+scikit-learn==1.5.0
 
-transformers==4.35.0
-sentence-transformers==2.2.2
-datasets==2.14.5
-scikit-learn==1.3.2
-pandas==2.1.3
+# --------------------------
+# NLP (lighter + compatible)
+# --------------------------
+transformers==4.45.0
+sentence-transformers==3.0.1
+datasets==2.19.0
+accelerate==0.33.0
+
+# --------------------------
+# FILE HANDLING
+# --------------------------
 PyPDF2==3.0.1
-numpy==1.26.2
-accelerate==0.24.1
 
 # --------------------------
-# UTILITIES & DEV TOOLS
+# UTILITIES
 # --------------------------
-pytest==7.4.3
-tqdm==4.66.1
-python-dotenv==1.0.0
+tqdm==4.66.4
+python-dotenv==1.0.1
